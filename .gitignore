@@ -1,0 +1,10 @@
+# Bom files
+*.csv
+*.tsv
+*.xml
+*.bak
+
+*.pro filter=kicad_project
+*.sch filter=kicad_sch
+*-bak
+
