@@ -1,3 +1,3 @@
 # abies
 
-Abies Comprehensi Audio Processing Platform
+Abies Comprehensive Audio Processing Platform
