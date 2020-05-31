@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name fpga_dev)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/fpga_dev.lib)(options "")(descr ""))
   (lib (name audio_digital)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/audio_digital.lib)(options "")(descr ""))
+  (lib (name bluetooth)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/bluetooth.lib)(options "")(descr ""))
 )
