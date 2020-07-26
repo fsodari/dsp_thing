@@ -52,146 +52,6 @@ F 3 "~" H 1550 1750 50  0001 C CNN
 $EndComp
 NoConn ~ 1300 2200
 $Comp
-L MCU_ST_STM32F1:STM32F105RBTx U?
-U 1 1 5ED74E5F
-P 3250 5650
-AR Path="/5ED36906/5ED74E5F" Ref="U?"  Part="1" 
-AR Path="/5ED74E5F" Ref="U?"  Part="1" 
-F 0 "U?" H 3250 5700 50  0000 C CNN
-F 1 "STM32F105RBTx" H 3250 5600 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 2650 3950 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00220364.pdf" H 3250 5650 50  0001 C CNN
-	1    3250 5650
-	1    0    0    -1  
-$EndComp
-Text Label 4350 5250 2    50   ~ 0
-usb_d+
-Wire Wire Line
-	4350 5250 3950 5250
-Text Label 4350 5150 2    50   ~ 0
-usb_d-
-Wire Wire Line
-	4350 5150 3950 5150
-Text Label 2000 6350 0    50   ~ 0
-i2s_mck0
-Text Label 4500 7250 2    50   ~ 0
-i2s_sd0
-Text Label 4500 7050 2    50   ~ 0
-i2s_sck0
-Text Label 4500 6950 2    50   ~ 0
-i2s_lrck0
-Wire Wire Line
-	4500 6950 3950 6950
-Wire Wire Line
-	3950 7050 4500 7050
-Wire Wire Line
-	4500 7250 3950 7250
-Wire Wire Line
-	2000 6350 2550 6350
-Text Label 2000 6450 0    50   ~ 0
-i2s_mck1
-Wire Wire Line
-	2000 6450 2550 6450
-Text Label 4500 6050 2    50   ~ 0
-i2s_sck1
-Wire Wire Line
-	4500 6050 3950 6050
-Text Label 4500 5550 2    50   ~ 0
-i2s_lrck1
-Wire Wire Line
-	4500 5550 3950 5550
-Text Label 4500 6250 2    50   ~ 0
-i2s_sd1
-Wire Wire Line
-	4500 6250 3950 6250
-$Comp
-L Device:Crystal Y?
-U 1 1 5ED74E79
-P 1900 5200
-AR Path="/5ED36906/5ED74E79" Ref="Y?"  Part="1" 
-AR Path="/5ED74E79" Ref="Y?"  Part="1" 
-F 0 "Y?" V 1854 5331 50  0000 L CNN
-F 1 "8MHz" V 1945 5331 50  0000 L CNN
-F 2 "" H 1900 5200 50  0001 C CNN
-F 3 "~" H 1900 5200 50  0001 C CNN
-	1    1900 5200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1900 5350 1900 5450
-Wire Wire Line
-	1900 5450 2550 5450
-Wire Wire Line
-	2550 5350 2450 5350
-Wire Wire Line
-	2450 5350 2450 4950
-Wire Wire Line
-	2450 4950 1900 4950
-Wire Wire Line
-	1900 4950 1900 5050
-$Comp
-L Device:C C?
-U 1 1 5ED74E85
-P 1650 5450
-AR Path="/5ED36906/5ED74E85" Ref="C?"  Part="1" 
-AR Path="/5ED74E85" Ref="C?"  Part="1" 
-F 0 "C?" V 1700 5550 50  0000 C CNN
-F 1 "18pf" V 1700 5300 50  0000 C CNN
-F 2 "" H 1688 5300 50  0001 C CNN
-F 3 "~" H 1650 5450 50  0001 C CNN
-	1    1650 5450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5ED74E8B
-P 1650 4950
-AR Path="/5ED36906/5ED74E8B" Ref="C?"  Part="1" 
-AR Path="/5ED74E8B" Ref="C?"  Part="1" 
-F 0 "C?" V 1700 5050 50  0000 C CNN
-F 1 "18pf" V 1700 4800 50  0000 C CNN
-F 2 "" H 1688 4800 50  0001 C CNN
-F 3 "~" H 1650 4950 50  0001 C CNN
-	1    1650 4950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1800 4950 1900 4950
-Connection ~ 1900 4950
-Wire Wire Line
-	1900 5450 1800 5450
-Connection ~ 1900 5450
-$Comp
-L power:GND #PWR?
-U 1 1 5ED74E95
-P 1400 5450
-AR Path="/5ED36906/5ED74E95" Ref="#PWR?"  Part="1" 
-AR Path="/5ED74E95" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1400 5200 50  0001 C CNN
-F 1 "GND" V 1405 5322 50  0000 R CNN
-F 2 "" H 1400 5450 50  0001 C CNN
-F 3 "" H 1400 5450 50  0001 C CNN
-	1    1400 5450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1400 5450 1500 5450
-$Comp
-L power:GND #PWR?
-U 1 1 5ED74E9C
-P 1400 4950
-AR Path="/5ED36906/5ED74E9C" Ref="#PWR?"  Part="1" 
-AR Path="/5ED74E9C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1400 4700 50  0001 C CNN
-F 1 "GND" V 1405 4822 50  0000 R CNN
-F 2 "" H 1400 4950 50  0001 C CNN
-F 3 "" H 1400 4950 50  0001 C CNN
-	1    1400 4950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1400 4950 1500 4950
-$Comp
 L Device:R R?
 U 1 1 5ED74EA3
 P 1950 1800
@@ -323,41 +183,6 @@ $EndComp
 Wire Wire Line
 	2700 1600 2600 1600
 Connection ~ 2600 1600
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5ED976DD
-P 3150 3650
-F 0 "#PWR?" H 3150 3500 50  0001 C CNN
-F 1 "+3.3V" H 3165 3823 50  0000 C CNN
-F 2 "" H 3150 3650 50  0001 C CNN
-F 3 "" H 3150 3650 50  0001 C CNN
-	1    3150 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 3650 3150 3750
-Wire Wire Line
-	3150 3750 3250 3750
-Wire Wire Line
-	3450 3750 3450 3850
-Connection ~ 3150 3750
-Wire Wire Line
-	3150 3750 3150 3850
-Wire Wire Line
-	3350 3750 3350 3850
-Connection ~ 3350 3750
-Wire Wire Line
-	3350 3750 3450 3750
-Wire Wire Line
-	3250 3850 3250 3750
-Connection ~ 3250 3750
-Wire Wire Line
-	3250 3750 3350 3750
-Wire Wire Line
-	3450 3750 3550 3750
-Wire Wire Line
-	3550 3750 3550 3850
-Connection ~ 3450 3750
 Wire Notes Line
 	800  650  3050 650 
 Wire Notes Line
@@ -368,43 +193,6 @@ Wire Notes Line
 	800  2600 800  650 
 Text Notes 800  650  0    50   ~ 0
 USB
-$Comp
-L power:GND #PWR?
-U 1 1 5EDA9575
-P 3050 7650
-AR Path="/5ED36906/5EDA9575" Ref="#PWR?"  Part="1" 
-AR Path="/5EDA9575" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3050 7400 50  0001 C CNN
-F 1 "GND" H 3055 7477 50  0000 C CNN
-F 2 "" H 3050 7650 50  0001 C CNN
-F 3 "" H 3050 7650 50  0001 C CNN
-	1    3050 7650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 7450 3050 7550
-Wire Wire Line
-	3050 7550 3150 7550
-Wire Wire Line
-	3150 7550 3150 7450
-Connection ~ 3050 7550
-Wire Wire Line
-	3050 7550 3050 7650
-Wire Wire Line
-	3150 7550 3250 7550
-Wire Wire Line
-	3250 7550 3250 7450
-Connection ~ 3150 7550
-Wire Wire Line
-	3250 7550 3350 7550
-Wire Wire Line
-	3350 7550 3350 7450
-Connection ~ 3250 7550
-Wire Wire Line
-	3350 7550 3450 7550
-Wire Wire Line
-	3450 7550 3450 7450
-Connection ~ 3350 7550
 $Comp
 L audio_digital:CS4344 U?
 U 1 1 5EDC3C0F
@@ -1082,14 +870,6 @@ Text Label 4150 1400 0    50   ~ 0
 bt_rx
 Text Label 4150 1300 0    50   ~ 0
 bt_tx
-Text Label 2100 6750 0    50   ~ 0
-bt_rx_mcu
-Wire Wire Line
-	2100 6750 2550 6750
-Text Label 2100 6850 0    50   ~ 0
-bt_tx_mcu
-Wire Wire Line
-	2100 6850 2550 6850
 NoConn ~ 4650 1500
 NoConn ~ 4650 1600
 Text Label 5950 1200 2    50   ~ 0
@@ -1104,18 +884,6 @@ NoConn ~ 5650 1600
 NoConn ~ 5650 1500
 NoConn ~ 5650 1400
 NoConn ~ 5650 1300
-Text Label 2100 6550 0    50   ~ 0
-bt_gpio0
-Wire Wire Line
-	2100 6550 2550 6550
-Text Label 2100 6650 0    50   ~ 0
-bt_reset
-Wire Wire Line
-	2100 6650 2550 6650
-Text Label 4350 4450 2    50   ~ 0
-spi_cs
-Wire Wire Line
-	4350 4450 3950 4450
 $Comp
 L Jumper:Jumper_3_Open JP?
 U 1 1 5F03B660
@@ -1234,4 +1002,25 @@ Wire Notes Line
 	9750 7000 12950 7000
 Text Notes 9750 7000 0    50   ~ 0
 ADC
+$Comp
+L microcontroller_arm:CY8C5888LTI-LP097 U?
+U 1 1 5F1FE5BA
+P 3450 5850
+F 0 "U?" H 3400 5950 60  0000 L CNN
+F 1 "CY8C5888LTI-LP097" H 3000 5800 60  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-68-1EP_8x8mm_P0.4mm_EP5.2x5.2mm_ThermalVias" H 2500 6650 60  0001 C CNN
+F 3 "https://www.cypress.com/file/45906/download" H 2500 6650 60  0001 C CNN
+F 4 "Cypress Semicondutor" H 5450 6050 60  0001 C CNN "Manufacturer"
+F 5 "CY8C5888LTI-LP097" H 5450 5950 60  0001 C CNN "Manufacturer Part Number"
+	1    3450 5850
+	1    0    0    -1  
+$EndComp
+Text Label 3050 7500 1    50   ~ 0
+usb_d+
+Text Label 3150 7500 1    50   ~ 0
+usb_d-
+Wire Wire Line
+	3150 7500 3150 7200
+Wire Wire Line
+	3050 7200 3050 7500
 $EndSCHEMATC

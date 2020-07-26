@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
@@ -272,6 +273,8 @@ Wire Wire Line
 Connection ~ 2900 2100
 $EndSCHEMATC
 =======
+=======
+>>>>>>> Stashed changes
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
@@ -460,4 +463,7 @@ Wire Wire Line
 	8150 6050 8150 5650
 NoConn ~ 1950 3900
 $EndSCHEMATC
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
