@@ -1,6 +1,6 @@
 (sym_lib_table
-  (lib (name fpga_dev)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/fpga_dev.lib)(options "")(descr ""))
-  (lib (name audio_digital)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/audio_digital.lib)(options "")(descr ""))
-  (lib (name bluetooth)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/bluetooth.lib)(options "")(descr ""))
-  (lib (name microcontroller_arm)(type Legacy)(uri ${FRANK_SYMBOL_DIR}/microcontroller_arm.lib)(options "")(descr ""))
+  (lib (name fpga_dev)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/fpga_dev.lib)(options "")(descr ""))
+  (lib (name audio_digital)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/audio-digital.lib)(options "")(descr ""))
+  (lib (name psoc)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/psoc.lib)(options "")(descr ""))
+  (lib (name audio-amplifier)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/audio-amplifier.lib)(options "")(descr ""))
 )

@@ -1,10 +1,18 @@
-# Bom files
-*.csv
 *.tsv
 *.xml
 *.bak
-
-*.pro filter=kicad_project
-*.sch filter=kicad_sch
+*.step
+*gerbers*
+*plots*
+*cache.lib*
+*.nc
+*Copy*
+rescue-backup
+fp-info-cache
+*.drl
 *-bak
-
+*.doc
+*.xls
+*.xlsx
+*.html
+plot
