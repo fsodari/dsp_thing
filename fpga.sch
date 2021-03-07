@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 4
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -19,6 +19,7 @@ U 1 1 5FA32856
 P 5300 4000
 AR Path="/5FA32856" Ref="U?"  Part="1" 
 AR Path="/5FA28C16/5FA32856" Ref="U?"  Part="1" 
+AR Path="/6042C0C1/5FA32856" Ref="U?"  Part="1" 
 F 0 "U?" H 5300 5415 50  0000 C CNN
 F 1 "CMOD_A7" H 5300 5324 50  0000 C CNN
 F 2 "" H 5300 5150 50  0001 C CNN
@@ -49,6 +50,7 @@ P 6600 5150
 AR Path="/5ED36906/5FA32864" Ref="#PWR?"  Part="1" 
 AR Path="/5FA32864" Ref="#PWR?"  Part="1" 
 AR Path="/5FA28C16/5FA32864" Ref="#PWR?"  Part="1" 
+AR Path="/6042C0C1/5FA32864" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 6600 4900 50  0001 C CNN
 F 1 "GND" V 6605 5022 50  0000 R CNN
 F 2 "" H 6600 5150 50  0001 C CNN

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name fpga_dev)(type KiCad)(uri ${ABIES_FP_DIR}/fpga_dev.pretty)(options "")(descr ""))
+)
