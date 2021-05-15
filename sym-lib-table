@@ -3,4 +3,6 @@
   (lib (name audio_digital)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/audio-digital.lib)(options "")(descr ""))
   (lib (name psoc)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/psoc.lib)(options "")(descr ""))
   (lib (name audio-amplifier)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/audio-amplifier.lib)(options "")(descr ""))
+  (lib (name power-reg)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/power-reg.lib)(options "")(descr ""))
+  (lib (name power-switch)(type Legacy)(uri ${ABIES_SYMBOL_DIR}/power-switch.lib)(options "")(descr ""))
 )

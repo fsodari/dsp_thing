@@ -61,21 +61,6 @@ F 3 "" H 3600 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3VA #PWR?
-U 1 1 5FF79233
-P 3600 2750
-AR Path="/5FF79233" Ref="#PWR?"  Part="1" 
-AR Path="/5FA600F4/5FF79233" Ref="#PWR?"  Part="1" 
-AR Path="/5FEFCD68/5FF79233" Ref="#PWR?"  Part="1" 
-AR Path="/5FEEB7ED/5FF79233" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3600 2600 50  0001 C CNN
-F 1 "+3.3VA" H 3615 2923 50  0000 C CNN
-F 2 "" H 3600 2750 50  0001 C CNN
-F 3 "" H 3600 2750 50  0001 C CNN
-	1    3600 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FF79239
 P 4400 4150
@@ -180,38 +165,8 @@ Wire Wire Line
 	4250 2350 4250 2250
 Wire Wire Line
 	4050 2250 4050 2350
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 5FF79262
-P 4050 1850
-AR Path="/5FF79262" Ref="#PWR?"  Part="1" 
-AR Path="/5FA600F4/5FF79262" Ref="#PWR?"  Part="1" 
-AR Path="/5FEFCD68/5FF79262" Ref="#PWR?"  Part="1" 
-AR Path="/5FEEB7ED/5FF79262" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4050 1700 50  0001 C CNN
-F 1 "+3.3VA" V 4050 2100 50  0000 C CNN
-F 2 "" H 4050 1850 50  0001 C CNN
-F 3 "" H 4050 1850 50  0001 C CNN
-	1    4050 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 1850 4050 1950
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 5FF79269
-P 4250 1850
-AR Path="/5FA600F4/5FF79269" Ref="#PWR?"  Part="1" 
-AR Path="/5FF79269" Ref="#PWR?"  Part="1" 
-AR Path="/5FEFCD68/5FF79269" Ref="#PWR?"  Part="1" 
-AR Path="/5FEEB7ED/5FF79269" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4250 1700 50  0001 C CNN
-F 1 "+3.3VA" V 4250 2100 50  0000 C CNN
-F 2 "" H 4250 1850 50  0001 C CNN
-F 3 "" H 4250 1850 50  0001 C CNN
-	1    4250 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 1850 4250 1950
 Wire Notes Line
@@ -601,21 +556,6 @@ F 3 "" H 7300 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 4050 7300 3950
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 5FF79312
-P 7250 2650
-AR Path="/5FF79312" Ref="#PWR?"  Part="1" 
-AR Path="/5FA600F4/5FF79312" Ref="#PWR?"  Part="1" 
-AR Path="/5FEFCD68/5FF79312" Ref="#PWR?"  Part="1" 
-AR Path="/5FEEB7ED/5FF79312" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7250 2500 50  0001 C CNN
-F 1 "+3.3VA" V 7250 2900 50  0000 C CNN
-F 2 "" H 7250 2650 50  0001 C CNN
-F 3 "" H 7250 2650 50  0001 C CNN
-	1    7250 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7250 2650 7250 2750
 $Comp
@@ -668,21 +608,6 @@ F 1 "1uF" H 6950 2050 50  0000 L CNN
 F 2 "" H 6988 2000 50  0001 C CNN
 F 3 "~" H 6950 2150 50  0001 C CNN
 	1    6950 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 5FF7932E
-P 6950 1900
-AR Path="/5FF7932E" Ref="#PWR?"  Part="1" 
-AR Path="/5FA600F4/5FF7932E" Ref="#PWR?"  Part="1" 
-AR Path="/5FEFCD68/5FF7932E" Ref="#PWR?"  Part="1" 
-AR Path="/5FEEB7ED/5FF7932E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6950 1750 50  0001 C CNN
-F 1 "+3.3VA" V 6950 2150 50  0000 C CNN
-F 2 "" H 6950 1900 50  0001 C CNN
-F 3 "" H 6950 1900 50  0001 C CNN
-	1    6950 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1078,4 +1003,59 @@ Wire Wire Line
 	5750 5000 5950 5000
 Wire Wire Line
 	5700 6050 5900 6050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DF0530
+P 3600 2750
+F 0 "#PWR?" H 3600 2600 50  0001 C CNN
+F 1 "+3.3V" H 3615 2923 50  0000 C CNN
+F 2 "" H 3600 2750 50  0001 C CNN
+F 3 "" H 3600 2750 50  0001 C CNN
+	1    3600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DF10AA
+P 4050 1850
+F 0 "#PWR?" H 4050 1700 50  0001 C CNN
+F 1 "+3.3V" H 4065 2023 50  0000 C CNN
+F 2 "" H 4050 1850 50  0001 C CNN
+F 3 "" H 4050 1850 50  0001 C CNN
+	1    4050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DF1987
+P 4250 1850
+F 0 "#PWR?" H 4250 1700 50  0001 C CNN
+F 1 "+3.3V" H 4265 2023 50  0000 C CNN
+F 2 "" H 4250 1850 50  0001 C CNN
+F 3 "" H 4250 1850 50  0001 C CNN
+	1    4250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DF46C6
+P 6950 1900
+F 0 "#PWR?" H 6950 1750 50  0001 C CNN
+F 1 "+3.3V" H 6965 2073 50  0000 C CNN
+F 2 "" H 6950 1900 50  0001 C CNN
+F 3 "" H 6950 1900 50  0001 C CNN
+	1    6950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60DF4F42
+P 7250 2650
+F 0 "#PWR?" H 7250 2500 50  0001 C CNN
+F 1 "+3.3V" H 7265 2823 50  0000 C CNN
+F 2 "" H 7250 2650 50  0001 C CNN
+F 3 "" H 7250 2650 50  0001 C CNN
+	1    7250 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

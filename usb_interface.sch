@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -731,8 +731,6 @@ Wire Wire Line
 	1800 1650 2400 1650
 Wire Wire Line
 	2400 1750 1800 1750
-Wire Wire Line
-	1800 1450 1900 1450
 $Comp
 L power:GND #PWR?
 U 1 1 5FEF6207
@@ -755,55 +753,6 @@ Text Label 3000 1650 2    50   ~ 0
 usb_d+
 Text Label 3000 1750 2    50   ~ 0
 usb_d-
-$Comp
-L Device:R R?
-U 1 1 5FEF6211
-P 2150 1450
-AR Path="/5FA355D9/5FEF6211" Ref="R?"  Part="1" 
-AR Path="/5FEF6211" Ref="R?"  Part="1" 
-AR Path="/5FA60E20/5FEF6211" Ref="R?"  Part="1" 
-F 0 "R?" V 2050 1450 50  0000 C CNN
-F 1 "4.7k" V 2150 1450 50  0000 C CNN
-F 2 "" V 2080 1450 50  0001 C CNN
-F 3 "~" H 2150 1450 50  0001 C CNN
-	1    2150 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FEF6217
-P 2400 1200
-AR Path="/5FA355D9/5FEF6217" Ref="R?"  Part="1" 
-AR Path="/5FEF6217" Ref="R?"  Part="1" 
-AR Path="/5FA60E20/5FEF6217" Ref="R?"  Part="1" 
-F 0 "R?" H 2330 1154 50  0000 R CNN
-F 1 "10k" V 2400 1250 50  0000 R CNN
-F 2 "" V 2330 1200 50  0001 C CNN
-F 3 "~" H 2400 1200 50  0001 C CNN
-	1    2400 1200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2300 1450 2400 1450
-Wire Wire Line
-	2400 1450 2400 1350
-$Comp
-L power:GND #PWR?
-U 1 1 5FEF621F
-P 2400 950
-AR Path="/5ED36906/5FEF621F" Ref="#PWR?"  Part="1" 
-AR Path="/5FEF621F" Ref="#PWR?"  Part="1" 
-AR Path="/5FA355D9/5FEF621F" Ref="#PWR?"  Part="1" 
-AR Path="/5FA60E20/5FEF621F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 700 50  0001 C CNN
-F 1 "GND" H 2405 777 50  0000 C CNN
-F 2 "" H 2400 950 50  0001 C CNN
-F 3 "" H 2400 950 50  0001 C CNN
-	1    2400 950 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2400 950  2400 1050
 $Comp
 L Device:R R?
 U 1 1 5FEF6226
@@ -875,11 +824,6 @@ F 3 "" H 900 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	900  2350 1000 2350
-Text Label 2800 1450 2    50   ~ 0
-vusb_mon
-Wire Wire Line
-	2800 1450 2400 1450
-Connection ~ 2400 1450
 Text Notes 1300 1100 0    50   ~ 0
 Self-powered
 $Comp
@@ -952,50 +896,6 @@ F 3 "" H 3000 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 1150 3000 1250
-Text GLabel 1900 1350 1    50   Input ~ 0
-usb_+5V
-Wire Wire Line
-	1900 1350 1900 1450
-Connection ~ 1900 1450
-Wire Wire Line
-	1900 1450 2000 1450
-$Comp
-L Device:CP C?
-U 1 1 5FEF626B
-P 950 1250
-AR Path="/5FA60E20/5FEF626B" Ref="C?"  Part="1" 
-AR Path="/5FEF626B" Ref="C?"  Part="1" 
-AR Path="/5FA355D9/5FEF626B" Ref="C?"  Part="1" 
-F 0 "C?" H 950 1350 50  0000 L CNN
-F 1 "100uF" H 950 1150 50  0000 L CNN
-F 2 "" H 988 1100 50  0001 C CNN
-F 3 "~" H 950 1250 50  0001 C CNN
-	1    950  1250
-	1    0    0    -1  
-$EndComp
-Text GLabel 950  1000 1    50   Input ~ 0
-usb_+5V
-Wire Wire Line
-	950  1000 950  1100
-$Comp
-L power:GND #PWR?
-U 1 1 5FEF6273
-P 950 1500
-AR Path="/5ED36906/5FEF6273" Ref="#PWR?"  Part="1" 
-AR Path="/5FEF6273" Ref="#PWR?"  Part="1" 
-AR Path="/5FA355D9/5FEF6273" Ref="#PWR?"  Part="1" 
-AR Path="/5FA60E20/5FEF6273" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 950 1250 50  0001 C CNN
-F 1 "GND" H 955 1327 50  0000 C CNN
-F 2 "" H 950 1500 50  0001 C CNN
-F 3 "" H 950 1500 50  0001 C CNN
-	1    950  1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  1500 950  1400
-Text Label 5550 5800 1    50   ~ 0
-vusb_mon
 Wire Wire Line
 	5550 5800 5550 5500
 Text Notes 600  2600 0    50   ~ 0
@@ -1144,4 +1044,59 @@ Text HLabel 6750 5600 3    50   Output ~ 0
 psoc_sclk
 Wire Wire Line
 	6750 5600 6750 5500
+Wire Wire Line
+	1800 1450 2000 1450
+Text HLabel 5550 5800 3    50   Input ~ 0
+vusb_mon
+Text HLabel 2550 1450 2    50   Output ~ 0
+usb_pwr
+$Comp
+L Device:C C?
+U 1 1 60D492F1
+P 2000 1200
+AR Path="/5FA355D9/60D492F1" Ref="C?"  Part="1" 
+AR Path="/60D492F1" Ref="C?"  Part="1" 
+AR Path="/5FA60E20/60D492F1" Ref="C?"  Part="1" 
+F 0 "C?" H 2000 1300 50  0000 L CNN
+F 1 "0.1uF" H 2000 1100 50  0000 L CNN
+F 2 "" H 2038 1050 50  0001 C CNN
+F 3 "~" H 2000 1200 50  0001 C CNN
+	1    2000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1350 2000 1450
+$Comp
+L power:GND #PWR?
+U 1 1 60D5037C
+P 2000 950
+AR Path="/5ED36906/60D5037C" Ref="#PWR?"  Part="1" 
+AR Path="/60D5037C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA355D9/60D5037C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA60E20/60D5037C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 700 50  0001 C CNN
+F 1 "GND" H 2005 777 50  0000 C CNN
+F 2 "" H 2000 950 50  0001 C CNN
+F 3 "" H 2000 950 50  0001 C CNN
+	1    2000 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 1050 2000 950 
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 60D6EB60
+P 2300 1450
+F 0 "FB?" V 2200 1600 50  0000 C CNN
+F 1 "?" V 2117 1450 50  0000 C CNN
+F 2 "" V 2230 1450 50  0001 C CNN
+F 3 "~" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 1450 2000 1450
+Connection ~ 2000 1450
+Wire Wire Line
+	2550 1450 2450 1450
 $EndSCHEMATC
