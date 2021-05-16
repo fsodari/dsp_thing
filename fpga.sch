@@ -590,10 +590,6 @@ NoConn ~ 6200 4350
 NoConn ~ 6200 4450
 NoConn ~ 6200 4550
 NoConn ~ 6200 4650
-NoConn ~ 6200 4750
-NoConn ~ 6200 4850
-NoConn ~ 6200 4950
-NoConn ~ 6200 5050
 NoConn ~ 4400 4350
 NoConn ~ 4400 4250
 Text Label 4100 2850 0    50   ~ 0
@@ -628,6 +624,202 @@ Wire Wire Line
 	4100 3550 4400 3550
 Text Label 4100 3550 0    50   ~ 0
 psocgp7
+Text Label 7550 4750 2    50   ~ 0
+led0
+$Comp
+L Device:R R?
+U 1 1 613FDC12
+P 6450 4750
+F 0 "R?" V 6400 4900 50  0000 C CNN
+F 1 "R" V 6450 4750 50  0000 C CNN
+F 2 "" V 6380 4750 50  0001 C CNN
+F 3 "~" H 6450 4750 50  0001 C CNN
+	1    6450 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613FDDF1
+P 6700 4850
+F 0 "R?" V 6650 5000 50  0000 C CNN
+F 1 "R" V 6700 4850 50  0000 C CNN
+F 2 "" V 6630 4850 50  0001 C CNN
+F 3 "~" H 6700 4850 50  0001 C CNN
+	1    6700 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613FE1F0
+P 6950 4950
+F 0 "R?" V 6900 5100 50  0000 C CNN
+F 1 "R" V 6950 4950 50  0000 C CNN
+F 2 "" V 6880 4950 50  0001 C CNN
+F 3 "~" H 6950 4950 50  0001 C CNN
+	1    6950 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613FE6A8
+P 7200 5050
+F 0 "R?" V 7150 5200 50  0000 C CNN
+F 1 "R" V 7200 5050 50  0000 C CNN
+F 2 "" V 7130 5050 50  0001 C CNN
+F 3 "~" H 7200 5050 50  0001 C CNN
+	1    7200 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 4750 6300 4750
+Wire Wire Line
+	6200 4850 6550 4850
+Wire Wire Line
+	6800 4950 6200 4950
+Wire Wire Line
+	6200 5050 7050 5050
+Wire Wire Line
+	7550 4750 6600 4750
+Text Label 7550 4850 2    50   ~ 0
+led1
+Text Label 7550 4950 2    50   ~ 0
+led2
+Text Label 7550 5050 2    50   ~ 0
+led3
+Wire Wire Line
+	7550 5050 7350 5050
+Wire Wire Line
+	7550 4950 7100 4950
+Wire Wire Line
+	6850 4850 7550 4850
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61423155
+P 5350 750
+F 0 "J?" H 5430 742 50  0000 L CNN
+F 1 "LED" H 5430 651 50  0000 L CNN
+F 2 "" H 5350 750 50  0001 C CNN
+F 3 "~" H 5350 750 50  0001 C CNN
+	1    5350 750 
+	1    0    0    -1  
+$EndComp
+Text Label 4950 750  0    50   ~ 0
+led0
+$Comp
+L power:GND #PWR?
+U 1 1 61429691
+P 5050 850
+AR Path="/5ED36906/61429691" Ref="#PWR?"  Part="1" 
+AR Path="/61429691" Ref="#PWR?"  Part="1" 
+AR Path="/5FA28C16/61429691" Ref="#PWR?"  Part="1" 
+AR Path="/6042C0C1/61429691" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 600 50  0001 C CNN
+F 1 "GND" V 5055 722 50  0000 R CNN
+F 2 "" H 5050 850 50  0001 C CNN
+F 3 "" H 5050 850 50  0001 C CNN
+	1    5050 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 750  5150 750 
+Wire Wire Line
+	5050 850  5150 850 
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61431A7F
+P 5350 1100
+F 0 "J?" H 5430 1092 50  0000 L CNN
+F 1 "LED" H 5430 1001 50  0000 L CNN
+F 2 "" H 5350 1100 50  0001 C CNN
+F 3 "~" H 5350 1100 50  0001 C CNN
+	1    5350 1100
+	1    0    0    -1  
+$EndComp
+Text Label 4950 1100 0    50   ~ 0
+led1
+$Comp
+L power:GND #PWR?
+U 1 1 61431A86
+P 5050 1200
+AR Path="/5ED36906/61431A86" Ref="#PWR?"  Part="1" 
+AR Path="/61431A86" Ref="#PWR?"  Part="1" 
+AR Path="/5FA28C16/61431A86" Ref="#PWR?"  Part="1" 
+AR Path="/6042C0C1/61431A86" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 950 50  0001 C CNN
+F 1 "GND" V 5055 1072 50  0000 R CNN
+F 2 "" H 5050 1200 50  0001 C CNN
+F 3 "" H 5050 1200 50  0001 C CNN
+	1    5050 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 1100 5150 1100
+Wire Wire Line
+	5050 1200 5150 1200
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61435F5A
+P 5350 1450
+F 0 "J?" H 5430 1442 50  0000 L CNN
+F 1 "LED" H 5430 1351 50  0000 L CNN
+F 2 "" H 5350 1450 50  0001 C CNN
+F 3 "~" H 5350 1450 50  0001 C CNN
+	1    5350 1450
+	1    0    0    -1  
+$EndComp
+Text Label 4950 1450 0    50   ~ 0
+led2
+$Comp
+L power:GND #PWR?
+U 1 1 61435F61
+P 5050 1550
+AR Path="/5ED36906/61435F61" Ref="#PWR?"  Part="1" 
+AR Path="/61435F61" Ref="#PWR?"  Part="1" 
+AR Path="/5FA28C16/61435F61" Ref="#PWR?"  Part="1" 
+AR Path="/6042C0C1/61435F61" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 1300 50  0001 C CNN
+F 1 "GND" V 5055 1422 50  0000 R CNN
+F 2 "" H 5050 1550 50  0001 C CNN
+F 3 "" H 5050 1550 50  0001 C CNN
+	1    5050 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 1450 5150 1450
+Wire Wire Line
+	5050 1550 5150 1550
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6143A3A8
+P 5350 1800
+F 0 "J?" H 5430 1792 50  0000 L CNN
+F 1 "LED" H 5430 1701 50  0000 L CNN
+F 2 "" H 5350 1800 50  0001 C CNN
+F 3 "~" H 5350 1800 50  0001 C CNN
+	1    5350 1800
+	1    0    0    -1  
+$EndComp
+Text Label 4950 1800 0    50   ~ 0
+led3
+$Comp
+L power:GND #PWR?
+U 1 1 6143A3AF
+P 5050 1900
+AR Path="/5ED36906/6143A3AF" Ref="#PWR?"  Part="1" 
+AR Path="/6143A3AF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA28C16/6143A3AF" Ref="#PWR?"  Part="1" 
+AR Path="/6042C0C1/6143A3AF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 1650 50  0001 C CNN
+F 1 "GND" V 5055 1772 50  0000 R CNN
+F 2 "" H 5050 1900 50  0001 C CNN
+F 3 "" H 5050 1900 50  0001 C CNN
+	1    5050 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 1800 5150 1800
+Wire Wire Line
+	5050 1900 5150 1900
 Wire Bus Line
 	1500 2650 1500 3500
 $EndSCHEMATC
