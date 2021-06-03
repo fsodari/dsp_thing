@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -36,16 +36,8 @@ Wire Wire Line
 	5750 5800 5750 5500
 Wire Wire Line
 	5650 5500 5650 5800
-Text Label 5850 2500 3    50   ~ 0
-fpga0
 Wire Wire Line
 	5850 2800 5850 2500
-Text Label 5750 2500 3    50   ~ 0
-fpga1
-Text Label 5650 2500 3    50   ~ 0
-fpga2
-Text Label 5550 2500 3    50   ~ 0
-fpga3
 $Comp
 L Device:C C?
 U 1 1 5FA0C5BB
@@ -503,147 +495,18 @@ Text Label 6350 2600 3    50   ~ 0
 vccd
 Wire Wire Line
 	6350 2600 6350 2800
-$Comp
-L Device:Crystal_GND24 Y?
-U 1 1 5FA7DECF
-P 5200 7050
-F 0 "Y?" H 5200 7250 50  0000 L CNN
-F 1 "12MHz" H 5300 6950 50  0000 L CNN
-F 2 "" H 5200 7050 50  0001 C CNN
-F 3 "~" H 5200 7050 50  0001 C CNN
-	1    5200 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FA7E7B8
-P 5200 6750
-AR Path="/5ED36906/5FA7E7B8" Ref="#PWR?"  Part="1" 
-AR Path="/5FA7E7B8" Ref="#PWR?"  Part="1" 
-AR Path="/5FA355D9/5FA7E7B8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5200 6500 50  0001 C CNN
-F 1 "GND" H 5205 6577 50  0000 C CNN
-F 2 "" H 5200 6750 50  0001 C CNN
-F 3 "" H 5200 6750 50  0001 C CNN
-	1    5200 6750
-	-1   0    0    1   
-$EndComp
+Text Label 6250 5850 1    50   ~ 0
+audio_clk
 Wire Wire Line
-	5200 6750 5200 6850
-$Comp
-L power:GND #PWR?
-U 1 1 5FA8140E
-P 5200 7350
-AR Path="/5ED36906/5FA8140E" Ref="#PWR?"  Part="1" 
-AR Path="/5FA8140E" Ref="#PWR?"  Part="1" 
-AR Path="/5FA355D9/5FA8140E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5200 7100 50  0001 C CNN
-F 1 "GND" H 5205 7177 50  0000 C CNN
-F 2 "" H 5200 7350 50  0001 C CNN
-F 3 "" H 5200 7350 50  0001 C CNN
-	1    5200 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 7250 5200 7350
-Text Label 4950 7050 0    50   ~ 0
-xo
-Text Label 5450 7050 2    50   ~ 0
-xi
-Text Label 6150 5600 1    50   ~ 0
-xo
-Wire Wire Line
-	6150 5600 6150 5500
-Text Label 6250 5600 1    50   ~ 0
-xi
-Wire Wire Line
-	6250 5600 6250 5500
+	6250 5850 6250 5500
 Wire Wire Line
 	5750 2500 5750 2800
 Wire Wire Line
 	5650 2800 5650 2500
 Wire Wire Line
 	5550 2500 5550 2800
-Text Label 5450 2500 3    50   ~ 0
-fpga4
-Text Label 4500 3350 0    50   ~ 0
-fpga6
-Text Label 4500 3450 0    50   ~ 0
-fpga7
-Text Label 5250 2500 3    50   ~ 0
-fpga5
-Wire Wire Line
-	4500 3450 4700 3450
-Wire Wire Line
-	4700 3350 4500 3350
-Wire Wire Line
-	5250 2500 5250 2800
 Wire Wire Line
 	5450 2500 5450 2800
-$Comp
-L Device:C C?
-U 1 1 5FADC931
-P 4850 7300
-F 0 "C?" H 4850 7400 50  0000 L CNN
-F 1 "15pF" H 4850 7200 50  0000 L CNN
-F 2 "" H 4888 7150 50  0001 C CNN
-F 3 "~" H 4850 7300 50  0001 C CNN
-	1    4850 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 7150 4850 7050
-Wire Wire Line
-	4850 7050 5050 7050
-$Comp
-L power:GND #PWR?
-U 1 1 5FAE0B24
-P 4850 7550
-AR Path="/5ED36906/5FAE0B24" Ref="#PWR?"  Part="1" 
-AR Path="/5FAE0B24" Ref="#PWR?"  Part="1" 
-AR Path="/5FA355D9/5FAE0B24" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4850 7300 50  0001 C CNN
-F 1 "GND" H 4855 7377 50  0000 C CNN
-F 2 "" H 4850 7550 50  0001 C CNN
-F 3 "" H 4850 7550 50  0001 C CNN
-	1    4850 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 7550 4850 7450
-$Comp
-L Device:C C?
-U 1 1 5FAE4662
-P 5550 7300
-F 0 "C?" H 5550 7400 50  0000 L CNN
-F 1 "15pF" H 5550 7200 50  0000 L CNN
-F 2 "" H 5588 7150 50  0001 C CNN
-F 3 "~" H 5550 7300 50  0001 C CNN
-	1    5550 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 7050 5550 7150
-Wire Wire Line
-	5350 7050 5550 7050
-$Comp
-L power:GND #PWR?
-U 1 1 5FAE829B
-P 5550 7550
-AR Path="/5ED36906/5FAE829B" Ref="#PWR?"  Part="1" 
-AR Path="/5FAE829B" Ref="#PWR?"  Part="1" 
-AR Path="/5FA355D9/5FAE829B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 7300 50  0001 C CNN
-F 1 "GND" H 5555 7377 50  0000 C CNN
-F 2 "" H 5550 7550 50  0001 C CNN
-F 3 "" H 5550 7550 50  0001 C CNN
-	1    5550 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 7550 5550 7450
-Text Notes 5500 7000 0    50   ~ 0
-Does it matter?
 $Comp
 L power:GND #PWR?
 U 1 1 5FAECF94
@@ -1000,34 +863,10 @@ Wire Wire Line
 	5550 5800 5550 5500
 Text Notes 600  2600 0    50   ~ 0
 Optional grounding methods
-Text HLabel 6650 5600 3    50   Output ~ 0
-psoc_sdout
-Text HLabel 6550 5600 3    50   Input ~ 0
-psoc_sdin
-Text HLabel 6450 5600 3    50   Output ~ 0
-psoc_lrclk
-Text HLabel 6350 5600 3    50   Output ~ 0
-psoc_mclk
-Wire Wire Line
-	6350 5500 6350 5600
-Wire Wire Line
-	6450 5600 6450 5500
-Wire Wire Line
-	6550 5500 6550 5600
-Wire Wire Line
-	6650 5600 6650 5500
 Text Label 6850 5800 1    50   ~ 0
 fpga_8
-Text Label 7700 4850 2    50   ~ 0
-fpga_9
-Wire Wire Line
-	7700 4850 7400 4850
 Wire Wire Line
 	6850 5500 6850 5800
-Text Label 7700 4750 2    50   ~ 0
-fpga_10
-Wire Wire Line
-	7700 4750 7400 4750
 Wire Wire Line
 	4400 4750 4700 4750
 Wire Wire Line
@@ -1124,24 +963,113 @@ Wire Wire Line
 Connection ~ 2800 5600
 Wire Wire Line
 	2800 5600 2800 5500
-Text Label 7600 3550 2    50   ~ 0
-ain1
+$Comp
+L Oscillator:ASCO X?
+U 1 1 6086CF21
+P 3650 6850
+F 0 "X?" H 3850 7100 50  0000 L CNN
+F 1 "12.288 MHz" H 3650 6600 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASCO-4Pin_1.6x1.2mm" H 3750 6500 50  0001 C CNN
+F 3 "" H 3425 6975 50  0001 C CNN
+F 4 "Abracon" H 3650 6850 50  0001 C CNN "Mfg"
+F 5 "AMPMAFB-12.2880T" H 3650 6850 50  0001 C CNN "Mfgpn"
+	1    3650 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 608712C4
+P 3400 6450
+F 0 "C?" H 3400 6550 50  0000 L CNN
+F 1 "0.1uF" H 3400 6350 50  0000 L CNN
+F 2 "" H 3438 6300 50  0001 C CNN
+F 3 "~" H 3400 6450 50  0001 C CNN
+	1    3400 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608747E8
+P 3150 6450
+AR Path="/5ED36906/608747E8" Ref="#PWR?"  Part="1" 
+AR Path="/608747E8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA355D9/608747E8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3150 6200 50  0001 C CNN
+F 1 "GND" H 3155 6277 50  0000 C CNN
+F 2 "" H 3150 6450 50  0001 C CNN
+F 3 "" H 3150 6450 50  0001 C CNN
+	1    3150 6450
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	7600 3550 7400 3550
-Text Label 7600 3650 2    50   ~ 0
-ain0
+	3150 6450 3250 6450
 Wire Wire Line
-	7600 3650 7400 3650
-Text Label 7600 3450 2    50   ~ 0
-ain2
-Text Label 7600 3350 2    50   ~ 0
-ain3
+	3550 6450 3650 6450
 Wire Wire Line
-	7600 3350 7400 3350
+	3650 6450 3650 6550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608838DC
+P 3750 6450
+F 0 "#PWR?" H 3750 6300 50  0001 C CNN
+F 1 "+3.3V" V 3765 6578 50  0000 L CNN
+F 2 "" H 3750 6450 50  0001 C CNN
+F 3 "" H 3750 6450 50  0001 C CNN
+	1    3750 6450
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	7400 3450 7600 3450
-Text HLabel 6750 5600 3    50   Output ~ 0
-psoc_sclk
+	3650 6450 3750 6450
+Connection ~ 3650 6450
+$Comp
+L power:GND #PWR?
+U 1 1 6088C48D
+P 3650 7250
+AR Path="/5ED36906/6088C48D" Ref="#PWR?"  Part="1" 
+AR Path="/6088C48D" Ref="#PWR?"  Part="1" 
+AR Path="/5FA355D9/6088C48D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3650 7000 50  0001 C CNN
+F 1 "GND" H 3655 7077 50  0000 C CNN
+F 2 "" H 3650 7250 50  0001 C CNN
+F 3 "" H 3650 7250 50  0001 C CNN
+	1    3650 7250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6750 5600 6750 5500
+	3650 7250 3650 7150
+Text Label 2750 6850 0    50   ~ 0
+audio_clk_en
+Wire Wire Line
+	2750 6850 3250 6850
+Text Label 4400 6850 2    50   ~ 0
+audio_clk
+Wire Wire Line
+	4400 6850 4050 6850
+NoConn ~ 6150 5500
+$Comp
+L power:GND #PWR?
+U 1 1 608F1A83
+P 6350 5600
+AR Path="/5ED36906/608F1A83" Ref="#PWR?"  Part="1" 
+AR Path="/608F1A83" Ref="#PWR?"  Part="1" 
+AR Path="/5FA355D9/608F1A83" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6350 5350 50  0001 C CNN
+F 1 "GND" V 6350 5400 50  0000 C CNN
+F 2 "" H 6350 5600 50  0001 C CNN
+F 3 "" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5600 6350 5500
+Text HLabel 5850 2500 1    50   Output ~ 0
+mclk
+Text HLabel 5750 2500 1    50   Output ~ 0
+sclk
+Text HLabel 5650 2500 1    50   Output ~ 0
+lrclk
+Text HLabel 5550 2500 1    50   Output ~ 0
+sdo
+Text HLabel 5450 2500 1    50   Input ~ 0
+sdi
 $EndSCHEMATC

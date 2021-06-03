@@ -42,8 +42,6 @@ F1 "power.sch" 50
 $EndSheet
 Text Label 3650 4300 2    50   ~ 0
 psoc_sdout
-Wire Wire Line
-	3650 4300 3200 4300
 Text Label 3650 4400 2    50   ~ 0
 psoc_sdin
 Text Label 3650 4600 2    50   ~ 0
@@ -54,19 +52,6 @@ Wire Wire Line
 	3650 4700 3200 4700
 Wire Wire Line
 	3200 4600 3650 4600
-Wire Wire Line
-	3650 4400 3200 4400
-$Sheet
-S 1650 4200 1550 1800
-U 5FA355D9
-F0 "usb_interface" 50
-F1 "usb_interface.sch" 50
-F2 "psoc_sdout" O R 3200 4300 50 
-F3 "psoc_sdin" I R 3200 4400 50 
-F4 "psoc_lrclk" O R 3200 4600 50 
-F5 "psoc_mclk" O R 3200 4700 50 
-F6 "psoc_sclk" O R 3200 4500 50 
-$EndSheet
 Text Label 3650 4500 2    50   ~ 0
 psoc_sclk
 Wire Wire Line
@@ -108,9 +93,24 @@ hp_mute
 Wire Wire Line
 	6950 5150 7300 5150
 $Sheet
-S 5200 3000 900  800 
+S 5050 1900 1150 2450
 U 6042C0C1
 F0 "fpga" 50
 F1 "fpga.sch" 50
 $EndSheet
+$Sheet
+S 1650 4200 1550 1800
+U 5FA355D9
+F0 "usb_interface" 50
+F1 "usb_interface.sch" 50
+F2 "mclk" O R 3200 4700 50 
+F3 "sclk" O R 3200 4500 50 
+F4 "lrclk" O R 3200 4600 50 
+F5 "sdo" O R 3200 4300 50 
+F6 "sdi" I R 3200 4400 50 
+$EndSheet
+Wire Wire Line
+	3650 4400 3200 4400
+Wire Wire Line
+	3650 4300 3200 4300
 $EndSCHEMATC
